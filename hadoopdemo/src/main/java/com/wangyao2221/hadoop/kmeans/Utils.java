@@ -84,11 +84,9 @@ public class Utils {
 
             Path input = new Path(newCenterPath);
             FileStatus[] listFiles = fileSystem.listStatus(input);
-            for (int i = 0; i < listFiles.length; i++) {
-                FSDataOutputStream out = fileSystem.create(output);
-                FSDataInputStream in = fileSystem.open(listFiles[i].getPath());
-                IOUtils.copyBytes(in, out, 4096, true);
-            }
+            FSDataOutputStream out = fileSystem.create(output);
+            FSDataInputStream in = fileSystem.open(listFiles[0].getPath());
+            IOUtils.copyBytes(in, out, 4096, true);
             Utils.deletePath(newCenterPath);
         }
 

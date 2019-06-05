@@ -6,6 +6,8 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.util.GenericOptionsParser;
+import org.slf4j.Logger;
+import sun.rmi.runtime.Log;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -42,6 +44,7 @@ public class KMeansMapper extends Mapper<LongWritable, Text, IntWritable,Text> {
             }
         }
 
+        System.out.println(centerIndex + 1 + " " + value);
         context.write(new IntWritable(centerIndex + 1), value);
     }
 }
