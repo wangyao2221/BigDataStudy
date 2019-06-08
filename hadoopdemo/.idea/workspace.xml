@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="773d0159-2924-4571-b798-0075f9286b84" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Reducer1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Reducer1.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -119,8 +118,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Reducer1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+            <state relative-caret-position="418">
+              <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#560#577#0" expanded="true" />
@@ -406,7 +405,7 @@
       <workItem from="1559705839529" duration="2532000" />
       <workItem from="1559708601723" duration="2621000" />
       <workItem from="1559970834146" duration="1415000" />
-      <workItem from="1560003473683" duration="2369000" />
+      <workItem from="1560003473683" duration="2589000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;基于物品的推荐算法 未完成&quot;">
       <created>1560005763767</created>
@@ -439,7 +438,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55285000" />
+    <option name="totallyTimeSpent" value="55505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -841,8 +840,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Reducer1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+        <state relative-caret-position="418">
+          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#560#577#0" expanded="true" />

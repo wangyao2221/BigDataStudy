@@ -30,9 +30,9 @@ public class Reducer1 extends Reducer<Text,Text,Text,Text> {
         }
 
         StringBuilder sb = new StringBuilder();
-        for (String k : map.keySet()) {
-            int score = map.get(k);
-            sb.append(score).append(",");
+        for (String userID : map.keySet()) {
+            int score = map.get(userID);
+            sb.append(userID + "_" + score + ",");
         }
         if (sb.toString().endsWith(",")){
             sb.subSequence(0,sb.length() - 1);
