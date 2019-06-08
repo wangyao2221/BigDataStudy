@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="773d0159-2924-4571-b798-0075f9286b84" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Step1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Mapper1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Mapper1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Reducer1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Reducer1.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,82 +35,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/kmeans/KMeansMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/kmeans/KMeansReducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.2/hadoop-mapreduce-client-core-2.7.2.jar!/org/apache/hadoop/mapred/MapTask.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1606">
-              <caret line="145" selection-start-line="145" selection-end-line="145" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/input/kmeans.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.2/hadoop-mapreduce-client-core-2.7.2.jar!/org/apache/hadoop/mapreduce/Reducer.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/kmeans/KMeans.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/input/itemcf/step1_input/ActionList.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Mapper1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" selection-start-line="10" selection-end-line="11" selection-end-column="39" />
+            <state relative-caret-position="269">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,11 +49,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Reducer1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+            <state relative-caret-position="273">
+              <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#560#577#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -174,6 +104,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/ItemCFMapper.java" />
         <option value="$PROJECT_DIR$/input/itemcf/step1_input/ActionList.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Mapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Step1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Mapper1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Reducer1.java" />
       </list>
@@ -227,6 +158,29 @@
             <path>
               <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="hadoopdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoopdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
+              <item name="itemcf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoopdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
+              <item name="itemcf" type="462c0819:PsiDirectoryNode" />
+              <item name="step1_input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoopdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoopdemo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -259,6 +213,36 @@
               <item name="hadoop" type="462c0819:PsiDirectoryNode" />
               <item name="itemcf" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoopdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="itemcf" type="462c0819:PsiDirectoryNode" />
+              <item name="step1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoopdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="itemcf" type="462c0819:PsiDirectoryNode" />
+              <item name="step1" type="462c0819:PsiDirectoryNode" />
+              <item name="Step1" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoopdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="kmeans" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -281,15 +265,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\IDEA\hadoopdemo\input" />
+      <recent name="D:\Workspace\IDEA\hadoopdemo\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wangyao2221.hadoop.itemcf.step1" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Workspace\IDEA\hadoopdemo" />
       <recent name="D:\Workspace\IDEA\hadoopdemo\src\main\resources" />
       <recent name="D:\Workspace\IDEA\hadoopdemo\src" />
       <recent name="D:\Workspace\IDEA\hadoopdemo\src\main\resources\tmp\hadoop" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Workspace\IDEA\hadoopdemo\input" />
-      <recent name="D:\Workspace\IDEA\hadoopdemo\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -304,13 +291,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.KMeans">
+  <component name="RunManager" selected="Application.Step1">
     <configuration name="KMeans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wangyao2221.hadoop.kmeans.KMeans" />
       <module name="hadoopdemo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wangyao2221.hadoop.kmeans.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Step1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangyao2221.hadoop.itemcf.step1.Step1" />
+      <module name="hadoop-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangyao2221.hadoop.itemcf.step1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -366,9 +366,11 @@
       <item itemvalue="Application.WordCount" />
       <item itemvalue="Application.KMeans" />
       <item itemvalue="JUnit.HDFSOperations" />
+      <item itemvalue="Application.Step1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Step1" />
         <item itemvalue="Application.KMeans" />
         <item itemvalue="Application.WordCount" />
         <item itemvalue="JUnit.HDFSOperations" />
@@ -405,7 +407,7 @@
       <workItem from="1559705839529" duration="2532000" />
       <workItem from="1559708601723" duration="2621000" />
       <workItem from="1559970834146" duration="1415000" />
-      <workItem from="1560003473683" duration="2589000" />
+      <workItem from="1560003473683" duration="3381000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;基于物品的推荐算法 未完成&quot;">
       <created>1560005763767</created>
@@ -414,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560005763768</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="&quot;基于物品的推荐算法 未完成&quot;">
+      <created>1560006091170</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1560006091171</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -438,7 +447,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55505000" />
+    <option name="totallyTimeSpent" value="56297000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -453,15 +462,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7469799" weight="0.33707866" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.89946383" weight="0.3977591" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7469799" visible="true" weight="0.33519554" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.89946383" weight="0.39664805" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.79758716" weight="0.32914925" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.25302014" side_tool="true" weight="0.08963586" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4885906" weight="0.3286517" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4885906" weight="0.3282123" />
       <window_info anchor="bottom" id="Usages" order="11" sideWeight="0.49932975" weight="0.32914925" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -531,6 +540,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;基于物品的推荐算法 未完成&quot;" />
     <option name="LAST_COMMIT_MESSAGE" value="&quot;基于物品的推荐算法 未完成&quot;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Reducer1.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -763,37 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/kmeans/KMeansReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.2/hadoop-mapreduce-client-core-2.7.2.jar!/org/apache/hadoop/mapred/MapTask.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1606">
-          <caret line="145" selection-start-line="145" selection-end-line="145" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input/kmeans.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.2/hadoop-mapreduce-client-core-2.7.2.jar!/org/apache/hadoop/mapreduce/Reducer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -821,17 +811,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Step1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/input/itemcf/step1_input/ActionList.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/itemcf/ste1_output/part-r-00000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.2/hadoop-mapreduce-client-core-2.7.2.jar!/org/apache/hadoop/mapred/MapTask.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4467">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/kmeans/KMeansReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.2/hadoop-mapreduce-client-core-2.7.2.jar!/org/apache/hadoop/mapreduce/Reducer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/kmeans.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Mapper1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" selection-start-line="10" selection-end-line="11" selection-end-column="39" />
+        <state relative-caret-position="269">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -840,11 +875,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Reducer1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+        <state relative-caret-position="273">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#560#577#0" expanded="true" />
           </folding>
         </state>
       </provider>

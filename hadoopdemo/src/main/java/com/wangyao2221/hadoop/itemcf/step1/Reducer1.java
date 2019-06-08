@@ -34,12 +34,14 @@ public class Reducer1 extends Reducer<Text,Text,Text,Text> {
             int score = map.get(userID);
             sb.append(userID + "_" + score + ",");
         }
+
+        String line = null;
         if (sb.toString().endsWith(",")){
-            sb.subSequence(0,sb.length() - 1);
+            line = sb.subSequence(0,sb.length() - 1).toString();
         }
 
         outKey.set(itemID);
-        outValue.set(sb.toString());
+        outValue.set(line);
 
         context.write(outKey,outValue);
     }

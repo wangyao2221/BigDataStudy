@@ -19,7 +19,7 @@ public class Mapper1 extends Mapper<LongWritable,Text,Text,Text> {
         String score  = values[2];
 
         outKey.set(itemID);
-        outKey.set(userID + "_" + score);
+        outValue.set(userID + "_" + score);
 
         context.write(outKey,outValue);
     }
