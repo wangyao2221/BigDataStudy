@@ -7,15 +7,14 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
-import org.apache.hadoop.util.GenericOptionsParser;
 
 import java.io.IOException;
 
 public class KMeans {
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
-        String centerPath = "input/cluster.center.conf.txt";
-        String dataPath = "input/kmeans.txt";
-        String newCenterPath = "output/center";
+        String centerPath = "input/kmeans/cluster.center.conf.txt";
+        String dataPath = "input/kmeans/kmeans.txt";
+        String newCenterPath = "output/kmeans/center";
 
         int count = 0;
 

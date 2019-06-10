@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="773d0159-2924-4571-b798-0075f9286b84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Step1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input/matrix/step1_input/matrix2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input/matrix/step2_input/matrix1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step1/Mapper1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step1/Reducer1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step1/Step1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step2/Mapper2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step2/Reducer2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step2/Step2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Mapper1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Mapper1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Reducer1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Reducer1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/cluster.center.conf.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/kmeans/cluster.center.conf.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/kmeans.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/kmeans/kmeans.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/sc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/kmeans/sc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/kmeans/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/kmeans/KMeans.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,10 +45,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Mapper1.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step2/Step2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            <state relative-caret-position="272">
+              <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step2/Reducer2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,13 +66,82 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Reducer1.java">
+        <entry file="file://$PROJECT_DIR$/output/matrix/output/part-r-00000">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+            <state relative-caret-position="110">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/input/matrix/step2_input/matrix1">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output/matrix/step1_output/part-r-00000">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step1/Mapper1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.2/hadoop-mapreduce-client-core-2.7.2.jar!/org/apache/hadoop/mapreduce/Mapper.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step1/Reducer1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step2/Mapper2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/input/matrix/step1_input/matrix2">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -99,7 +187,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/kmeans/KMeansMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/kmeans/Utils.java" />
         <option value="$PROJECT_DIR$/input/cluster.center.conf.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/kmeans/KMeans.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/test.form" />
         <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/ItemCFMapper.java" />
         <option value="$PROJECT_DIR$/input/itemcf/step1_input/ActionList.txt" />
@@ -107,6 +194,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Step1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Mapper1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Reducer1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/kmeans/KMeans.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step1/Reducer1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step2/Mapper2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step2/Step1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step1/Step1.java" />
+        <option value="$PROJECT_DIR$/input/matrix/step2_input/matrix1" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step2/Step2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step2/Reducer2.java" />
+        <option value="$PROJECT_DIR$/output/matrix/ste1_output/part-r-00000" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step1/Mapper1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step2/Mapper2.java" />
+        <option value="$PROJECT_DIR$/output/matrix/step1_output/part-r-00000" />
+        <option value="$PROJECT_DIR$/input/matrix/step1_input/matrix2" />
       </list>
     </option>
   </component>
@@ -147,7 +247,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,14 +263,21 @@
               <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="hadoopdemo" type="462c0819:PsiDirectoryNode" />
               <item name="input" type="462c0819:PsiDirectoryNode" />
-              <item name="itemcf" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="hadoopdemo" type="462c0819:PsiDirectoryNode" />
               <item name="input" type="462c0819:PsiDirectoryNode" />
-              <item name="itemcf" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
               <item name="step1_input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoopdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
+              <item name="step2_input" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
@@ -181,6 +287,26 @@
             <path>
               <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="hadoopdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoopdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoopdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
+              <item name="step1_output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hadoopdemo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -211,7 +337,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="itemcf" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
@@ -220,7 +346,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="itemcf" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
               <item name="step1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -230,9 +356,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="itemcf" type="462c0819:PsiDirectoryNode" />
-              <item name="step1" type="462c0819:PsiDirectoryNode" />
-              <item name="Step1" type="1a9f42e2:ClassTreeNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
+              <item name="step2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hadoopdemo" type="b2602c69:ProjectViewProjectNode" />
@@ -241,12 +366,13 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="kmeans" type="462c0819:PsiDirectoryNode" />
+              <item name="wordcount" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Course" />
       <pane id="PackagesPane" />
     </panes>
@@ -256,7 +382,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553497023471" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/output/matrix/ste1_output" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -265,18 +391,20 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Workspace\IDEA\hadoopdemo\input" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\IDEA\BigDataStudy\hadoopdemo\input\matrix\step2_input" />
+      <recent name="D:\Workspace\IDEA\BigDataStudy\hadoopdemo\input\kmeans" />
+      <recent name="D:\Workspace\IDEA\hadoopdemo" />
       <recent name="D:\Workspace\IDEA\hadoopdemo\src\main\resources" />
+      <recent name="D:\Workspace\IDEA\hadoopdemo\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.wangyao2221.hadoop.itemcf.step1" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Workspace\IDEA\hadoopdemo" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\IDEA\BigDataStudy\hadoopdemo\output\matrix\ste1_output" />
+      <recent name="D:\Workspace\IDEA\hadoopdemo\input" />
       <recent name="D:\Workspace\IDEA\hadoopdemo\src\main\resources" />
-      <recent name="D:\Workspace\IDEA\hadoopdemo\src" />
-      <recent name="D:\Workspace\IDEA\hadoopdemo\src\main\resources\tmp\hadoop" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -291,7 +419,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Step1">
+  <component name="RunManager" selected="Application.Step2">
     <configuration name="KMeans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wangyao2221.hadoop.kmeans.KMeans" />
       <module name="hadoopdemo" />
@@ -305,12 +433,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Step1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangyao2221.hadoop.matrix.step1.Step1" />
+      <module name="hadoop-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangyao2221.hadoop.matrix.step1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Step1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wangyao2221.hadoop.itemcf.step1.Step1" />
       <module name="hadoop-demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wangyao2221.hadoop.itemcf.step1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Step2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangyao2221.hadoop.matrix.step2.Step2" />
+      <module name="hadoop-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangyao2221.hadoop.matrix.step2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -346,34 +500,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HDFSOperations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hadoopdemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wangyao2221.hadoop.wordcount.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wangyao2221.hadoop" />
-      <option name="MAIN_CLASS_NAME" value="com.wangyao2221.hadoop.HDFSOperations" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.WordMapReduce" />
       <item itemvalue="Application.WordCount" />
       <item itemvalue="Application.KMeans" />
-      <item itemvalue="JUnit.HDFSOperations" />
       <item itemvalue="Application.Step1" />
+      <item itemvalue="Application.Step1 (1)" />
+      <item itemvalue="Application.Step2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Step2" />
+        <item itemvalue="Application.Step1 (1)" />
         <item itemvalue="Application.Step1" />
         <item itemvalue="Application.KMeans" />
         <item itemvalue="Application.WordCount" />
-        <item itemvalue="JUnit.HDFSOperations" />
       </list>
     </recent_temporary>
   </component>
@@ -407,7 +548,10 @@
       <workItem from="1559705839529" duration="2532000" />
       <workItem from="1559708601723" duration="2621000" />
       <workItem from="1559970834146" duration="1415000" />
-      <workItem from="1560003473683" duration="3381000" />
+      <workItem from="1560003473683" duration="3456000" />
+      <workItem from="1560007942223" duration="532000" />
+      <workItem from="1560046839534" duration="1252000" />
+      <workItem from="1560143630446" duration="14918000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;基于物品的推荐算法 未完成&quot;">
       <created>1560005763767</created>
@@ -423,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560006091171</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="&quot;基于物品的推荐算法 未完成&quot;">
+      <created>1560006916282</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560006916282</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -447,13 +598,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56297000" />
+    <option name="totallyTimeSpent" value="73074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19571045" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21715818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -462,8 +613,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7469799" visible="true" weight="0.33519554" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.89946383" weight="0.39664805" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7469799" visible="true" weight="0.33798882" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.89946383" weight="0.36731842" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -474,7 +625,7 @@
       <window_info anchor="bottom" id="Usages" order="11" sideWeight="0.49932975" weight="0.32914925" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32960895" />
       <window_info anchor="bottom" id="SonarQube" order="15" sideWeight="0.49932975" weight="0.32914925" />
       <window_info anchor="bottom" id="Inspector" order="16" side_tool="true" />
       <window_info anchor="bottom" id="Dependencies Viewer" order="17" />
@@ -550,6 +701,24 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step2/Mapper2.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step2/Mapper2.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step1/Mapper1.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -563,92 +732,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-core/1.2.1/hadoop-core-1.2.1.jar!/org/apache/hadoop/fs/FileSystem.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="664" column="30" selection-start-line="664" selection-start-column="20" selection-end-line="664" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.2/hadoop-mapreduce-client-core-2.7.2.jar!/org/apache/hadoop/mapreduce/Job.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="699" column="9" selection-start-line="699" selection-start-column="9" selection-end-line="699" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-mapreduce-examples/2.7.2/hadoop-mapreduce-examples-2.7.2.jar!/org/apache/hadoop/examples/WordCount.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="23" column="5" lean-forward="true" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.7.2/hadoop-hdfs-2.7.2.jar!/org/apache/hadoop/hdfs/NameNodeProxies.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="82" column="50" lean-forward="true" selection-start-line="82" selection-start-column="50" selection-end-line="82" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hdfs-site.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/yarn-site.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/tmp/hadoop/hdfs-site.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/core-site.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/tmp/hadoop/core-site.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-common/2.7.2/hadoop-common-2.7.2.jar!/org/apache/hadoop/fs/FileSystem.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="780" column="40" selection-start-line="780" selection-start-column="40" selection-end-line="780" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/HDFSOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/wordcount/WordMapReduce.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output/kmeans/part-r-00000" />
     <entry file="file://$PROJECT_DIR$/output/part-r-00000" />
     <entry file="file://$PROJECT_DIR$/output/center.txt/part-r-00000" />
@@ -714,13 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.2/hadoop-mapreduce-client-core-2.7.2.jar!/org/apache/hadoop/mapreduce/Mapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-common/2.7.2/hadoop-common-2.7.2.jar!/org/apache/hadoop/fs/Path.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -728,7 +804,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input/sc.txt">
+    <entry file="file://$PROJECT_DIR$/input/kmeans/sc.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12682">
           <caret line="11" column="100" selection-start-line="11" selection-start-column="100" selection-end-line="11" selection-end-column="100" />
@@ -757,20 +833,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input/cluster.center.conf.txt">
+    <entry file="file://$PROJECT_DIR$/input/kmeans/cluster.center.conf.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output/center/part-r-00000">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/output/center/part-r-00000" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/test.form" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/ItemCFMapper.java" />
@@ -784,58 +854,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/kmeans/KMeans.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Mapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Step1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/test.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Mapper.java" />
     <entry file="file://$PROJECT_DIR$/input/itemcf/step1_input/ActionList.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/itemcf/ste1_output/part-r-00000">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.2/hadoop-mapreduce-client-core-2.7.2.jar!/org/apache/hadoop/mapred/MapTask.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4467">
-          <caret line="145" selection-start-line="145" selection-end-line="145" />
         </state>
       </provider>
     </entry>
@@ -849,14 +874,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.2/hadoop-mapreduce-client-core-2.7.2.jar!/org/apache/hadoop/mapreduce/Reducer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input/kmeans.txt">
+    <entry file="file://$PROJECT_DIR$/input/kmeans/kmeans.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
@@ -865,7 +883,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Mapper1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
+        <state relative-caret-position="264">
           <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -875,11 +893,182 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Reducer1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+        <state relative-caret-position="682">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/itemcf/ste1_output/part-r-00000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/HDFSOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-151">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/kmeans/KMeans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/itemcf/step1/Step1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+          <folding>
+            <element signature="method#main#0;class#Step1#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/matrix/ste1_output/matrix2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.2/hadoop-mapreduce-client-core-2.7.2.jar!/org/apache/hadoop/mapred/MapTask.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="295" column="38" selection-start-line="295" selection-start-column="38" selection-end-line="295" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-common/2.7.2/hadoop-common-2.7.2.jar!/org/apache/hadoop/io/Text.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/matrix/ste1_output/part-r-00000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step1/Step1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.2/hadoop-mapreduce-client-core-2.7.2.jar!/org/apache/hadoop/mapreduce/Reducer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step1/Reducer1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/apache-maven/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.2/hadoop-mapreduce-client-core-2.7.2.jar!/org/apache/hadoop/mapreduce/Mapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step1/Mapper1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step2/Reducer2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step2/Mapper2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangyao2221/hadoop/matrix/step2/Step2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/matrix/step1_input/matrix2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/matrix/step2_input/matrix1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/matrix/step1_output/part-r-00000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/matrix/output/part-r-00000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
