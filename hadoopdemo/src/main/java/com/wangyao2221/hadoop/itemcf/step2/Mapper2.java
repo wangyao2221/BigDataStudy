@@ -24,7 +24,7 @@ public class Mapper2 extends Mapper<LongWritable, Text,Text,Text> {
         super.setup(context);
         Configuration conf = context.getConfiguration();
         FileSystem fs = FileSystem.get(conf);
-        FSDataInputStream in = fs.open(new Path("output/itemcf/ste1_output/part-r-00000"));
+        FSDataInputStream in = fs.open(new Path("output/itemcf/step1_output/part-r-00000"));
         BufferedReader br = new BufferedReader(new InputStreamReader(in));
 
         String line = null;
@@ -44,22 +44,43 @@ public class Mapper2 extends Mapper<LongWritable, Text,Text,Text> {
         String[] scores = scoresStr.split(",");
 
         for (int i = 0; i < scoreList.size(); i++) {
-            String itemIDTmp = value.toString().split("\t")[0];
-            String scoresTmpStr = value.toString().split("\t")[1];
+            String itemIDTmp = scoreList.get(i).toString().split("\t")[0];
+            String scoresTmpStr = scoreList.get(i).toString().split("\t")[1];
             String[] scoresTmp = scoresTmpStr.split(",");
 
+            double sum = 0;
+            double squareSum = 0;
             for (int j = 0; j < scores.length; j++) {
-                String userID = scores[i].split("_")[0];
-                String score = scores[i].split("_")[1];
+                String userID = scores[j].split("_")[0];
+                String scoreStr = scores[j].split("_")[1];
+                int score = Integer.valueOf(scoreStr);
+
+                squareSum += score * score;
 
                 for (int k = 0; k < scoresTmp.length; k++) {
-                    String userIDTmp = scores[i].split("_")[0];
-                    String scoreTmp = scores[i].split("_")[1];
+                    String userIDTmp = scoresTmp[k].split("_")[0];
+                    String scoreStrTmp = scoresTmp[k].split("_")[1];
+                    int scoreTmp = Integer.valueOf(scoreStrTmp);
 
                     if (userID.equals(userIDTmp)){
+                        sum += score * scoreTmp;
                     }
                 }
             }
+
+            double sqqureSumTmp = 0;
+            for (int j = 0; j < scoresTmp.length; j++) {
+                String scoreStrTmp = scoresTmp[j].split("_")[1];
+                int scoreTmp = Integer.valueOf(scoreStrTmp);
+                squareSum += scoreTmp * scoreTmp;
+            }
+
+            double distance = sum / (Math.sqrt(squareSum) + Math.sqrt(sqqureSumTmp));
+
+            outKey.set(itemID);
+            outValue.set(itemIDTmp + "_" + distance);
+
+            context.write(outKey,outValue);
         }
     }
 }

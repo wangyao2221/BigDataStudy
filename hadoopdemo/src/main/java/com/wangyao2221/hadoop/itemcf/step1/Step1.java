@@ -18,7 +18,7 @@ import java.io.IOException;
 public class Step1 {
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
         String inputPath = "input/itemcf/step1_input/ActionList.txt";
-        String outputPath = "output/itemcf/ste1_output";
+        String outputPath = "output/itemcf/step1_output";
         run(inputPath,outputPath);
     }
 
