@@ -1,5 +1,7 @@
-package com.wangyao2221.hadoop.matrix.step2;
+package com.wangyao2221.hadoop.itemcf.step5;
 
+import com.wangyao2221.hadoop.itemcf.step4.Mapper4;
+import com.wangyao2221.hadoop.itemcf.step4.Reducer4;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
@@ -9,17 +11,16 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 
-public class Step2 {
-    private static String inputPath = "input/matrix/step2_input/matrix1";
-    private static String outputPath = "output/matrix/output";
+public class Step5 {
+    private static String inputPath = "output/itemcf/step1_output/part-r-00000";
+    private static String outputPath = "output/itemcf/step5_output";
 //    private static String cache = "output/matrix/step1_output";
 
-    public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
+    public static void main(String[] args) {
         int result = -1;
-        result = run(inputPath, outputPath);
+        result = new Step5().run();
+
         if (result == 1){
             System.out.println("run success");
         }else {
@@ -27,17 +28,17 @@ public class Step2 {
         }
     }
 
-    public static int run(String inputPath, String outputPath) throws IOException, ClassNotFoundException, InterruptedException {
+    public int run() {
         try {
             Configuration conf = new Configuration();
-            Job job = Job.getInstance(conf, "matrix_step2");
+            Job job = Job.getInstance(conf, "itemcf_step5");
             //单机环境分布式缓存不可用
 //            job.addCacheArchive(new URI(cache + "#matrix2"));
 //            job.addCacheArchive(new URI(cache + "/part-r-00000"));
 
-            job.setJarByClass(Step2.class);
-            job.setMapperClass(Mapper2.class);
-            job.setReducerClass(Reducer2.class);
+            job.setJarByClass(Step5.class);
+            job.setMapperClass(Mapper5.class);
+            job.setReducerClass(Reducer5.class);
 
             job.setMapOutputKeyClass(Text.class);
             job.setMapOutputValueClass(Text.class);
