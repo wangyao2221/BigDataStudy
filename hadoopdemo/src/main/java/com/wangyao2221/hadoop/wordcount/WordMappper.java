@@ -1,6 +1,5 @@
 package com.wangyao2221.hadoop.wordcount;
 
-import org.apache.hadoop.examples.WordCount;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
