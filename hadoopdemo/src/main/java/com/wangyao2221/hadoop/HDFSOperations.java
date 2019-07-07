@@ -1,8 +1,8 @@
 package com.wangyao2221.hadoop;
 
-import org.apache.commons.io.IOUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.*;
+import org.apache.hadoop.io.IOUtils;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -20,8 +20,8 @@ public class HDFSOperations {
     @Before
     public void configure() throws Exception {
         Configuration configuration = new Configuration();
-        configuration.set("fs.defaultFS", "hdfs://localhost:9000");
-        fileSystem = FileSystem.get(URI.create("hdfs://localhost:9000"), configuration, "root");
+        configuration.set("fs.defaultFS", "hdfs://172.18.0.2:9000");
+        fileSystem = FileSystem.get(URI.create("hdfs://172.18.0.2:9000"), configuration, "root");
     }
 
     @Test
@@ -45,5 +45,12 @@ public class HDFSOperations {
     public void mkdir() throws IOException {
         Path path = new Path("/demo");
         fileSystem.mkdirs(path);
+    }
+
+    @Test
+    public void text() throws IOException {
+        Path path = new Path("/user/root/output/part-r-00000");
+        FSDataInputStream input = fileSystem.open(path);
+        IOUtils.copyBytes(input,System.out,1024);
     }
 }

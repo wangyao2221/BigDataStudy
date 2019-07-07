@@ -8,6 +8,8 @@ package com.wangyao2221.hadoop.wordcount;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.StringTokenizer;
+
+import com.wangyao2221.hadoop.utils.HDFSUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
@@ -24,6 +26,7 @@ public class WordCount {
     }
 
     public static void main(String[] args) throws Exception {
+        System.setProperty("HADOOP_USER_NAME","root");
         Configuration conf = new Configuration();
         String[] otherArgs = (new GenericOptionsParser(conf, args)).getRemainingArgs();
         if (otherArgs.length < 2) {
@@ -31,10 +34,12 @@ public class WordCount {
             System.exit(2);
         }
 
+        HDFSUtils.rm("output");
+
         Job job = Job.getInstance(conf, "word count");
         job.setJarByClass(WordCount.class);
         job.setMapperClass(WordCount.TokenizerMapper.class);
-        job.setCombinerClass(WordCount.IntSumReducer.class);
+//        job.setCombinerClass(WordCount.IntSumReducer.class);
         job.setReducerClass(WordCount.IntSumReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
