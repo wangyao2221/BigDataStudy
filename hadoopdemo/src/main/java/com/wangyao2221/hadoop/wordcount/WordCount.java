@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.StringTokenizer;
 
+import com.wangyao2221.hadoop.BaseDriver;
 import com.wangyao2221.hadoop.utils.HDFSUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -21,20 +22,13 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.GenericOptionsParser;
 
-public class WordCount {
-    public WordCount() {
+public class WordCount extends BaseDriver {
+    public static void main(String[] args) throws Exception {
+        new WordCount().run(args);
     }
 
-    public static void main(String[] args) throws Exception {
-        System.setProperty("HADOOP_USER_NAME","root");
-        Configuration conf = new Configuration();
-        String[] otherArgs = (new GenericOptionsParser(conf, args)).getRemainingArgs();
-        if (otherArgs.length < 2) {
-            System.err.println("Usage: wordcount <in> [<in>...] <out>");
-            System.exit(2);
-        }
-
-        HDFSUtils.rm("output");
+    protected Job constructJob(Configuration conf) throws IOException {
+//        HDFSUtils.rm("output");
 
         Job job = Job.getInstance(conf, "word count");
         job.setJarByClass(WordCount.class);
@@ -44,12 +38,7 @@ public class WordCount {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
 
-        for(int i = 0; i < otherArgs.length - 1; ++i) {
-            FileInputFormat.addInputPath(job, new Path(otherArgs[i]));
-        }
-
-        FileOutputFormat.setOutputPath(job, new Path(otherArgs[otherArgs.length - 1]));
-        System.exit(job.waitForCompletion(true) ? 0 : 1);
+        return job;
     }
 
     public static class IntSumReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
@@ -58,7 +47,7 @@ public class WordCount {
         public IntSumReducer() {
         }
 
-        public void reduce(Text key, Iterable<IntWritable> values, Reducer<Text, IntWritable, Text, IntWritable>.Context context) throws IOException, InterruptedException {
+        public void reduce(Text key, Iterable<IntWritable> values, Reducer<Text, IntWritable, IntWritable, Text>.Context context) throws IOException, InterruptedException {
             int sum = 0;
 
             IntWritable val;
@@ -67,7 +56,7 @@ public class WordCount {
             }
 
             this.result.set(sum);
-            context.write(key, this.result);
+            context.write(this.result, key);
         }
     }
 
