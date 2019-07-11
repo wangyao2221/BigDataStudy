@@ -11,7 +11,6 @@ import java.io.IOException;
 
 public abstract class BaseDriver {
     public void run(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
-//        System.setProperty("HADOOP_USER_NAME","root");
         Configuration conf = new Configuration();
         String[] otherArgs = (new GenericOptionsParser(conf, args)).getRemainingArgs();
         if (otherArgs.length < 2) {

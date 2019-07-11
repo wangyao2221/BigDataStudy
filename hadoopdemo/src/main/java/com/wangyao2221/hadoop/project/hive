@@ -1,0 +1,22 @@
+CREATE EXTERNAL TABLE TRACKINFO(
+ ip string,
+ url string,
+ session_id string,
+ time string,
+ country string,
+ province string,
+ city string,
+ page string) PARTITIONED BY (day string)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t'
+LOCATION '/user/root/project/trackinfo';
+
+SELECT COUNT(*) FROM trackinfo WHERE day='2013-07-21';
+SELECT province,COUNT(*) FROM trackinfo WHERE day='2013-07-21' GROUP BY province;
+
+CREATE TABLE TRACKINFO_INFO_PROVINCE_STAT(
+ province string,
+ cnt bigint) PARTITIONED BY (day string)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t';
+
+INSERT OVERWRITE TABLE trackinfo_province_stat PARTITION(day='2013-07-21')
+SELECT province,COUNT(*) FROM trackinfo WHERE day='2013-07-21' GROUP BY province;
