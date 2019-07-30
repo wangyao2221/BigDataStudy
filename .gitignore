@@ -73,3 +73,8 @@ fabric.properties
 **/output
 **/target
 
+hadoop-demo/.idea
+hadoop-demo/output
+hadoop-demo/target
+hadoop-demo/input/raw/trackinfo_20130721.data
+
