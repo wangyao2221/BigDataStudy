@@ -2,10 +2,9 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 object SparkWordCount {
   def main(args: Array[String]) {
-    val logFile = "D:\\Workspace\\IDEA\\spark-demo\\input\\words";
-    val conf = new SparkConf().setAppName("SparkTest").setMaster("local[2]");
+    val logFile = args(0)
+    val conf = new SparkConf().setAppName("SparkTest").setMaster("local")
     val sc = new SparkContext(conf)
-
 
     val logData = sc.textFile(logFile)
     //    logData.foreach(println(_))
@@ -17,9 +16,9 @@ object SparkWordCount {
     //      })
 
     logData
-      .flatMap(_.split(" "))
-      .map((_, 1))
-      .reduceByKey(_ + _)
+      .flatMap(line => line.split(" "))
+      .map(word => (word, 1))
+      .reduceByKey((a, b) => a + b)
       .foreach(println)
   }
 
@@ -27,7 +26,7 @@ object SparkWordCount {
     return s + "xxx"
   }
 
-  def mymap(): Unit ={
+  def mymap(): Unit = {
 
   }
 }
