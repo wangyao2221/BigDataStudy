@@ -15,7 +15,11 @@ import org.apache.spark.sql.SparkSession
  */
 object SparkMySQLDataApp {
   def main(args: Array[String]): Unit = {
-    val spark = SparkSession.builder().appName("SparkMySQLDataApp").master("local[2]").getOrCreate();
+    val spark = SparkSession.builder()
+      .appName("SparkMySQLDataApp")
+      .master("local[2]")
+      .getOrCreate();
+
     val mysqlDF = spark.read.format("jdbc")
       .option("url", "jdbc:mysql://localhost:3306/metastore")
       .option("dbtable", "metastore.TBLS")
@@ -25,5 +29,7 @@ object SparkMySQLDataApp {
       .load
 
     mysqlDF.show()
+
+    spark.stop()
   }
 }

@@ -14,5 +14,7 @@ object SparkHiveDataApp {
     // 由于是伪分布式，所以分区多会比较慢，可以设置小一点
     spark.sqlContext.getConf("spark.sql.shuffle.partitions")
 //    spark.sqlContext.setConf("spark.sql.shuffle.partitions",10)
+
+    spark.stop()
   }
 }
