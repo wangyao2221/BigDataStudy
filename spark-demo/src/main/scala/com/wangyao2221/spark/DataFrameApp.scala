@@ -5,7 +5,8 @@ import org.apache.spark.sql.SparkSession
 object DataFrameApp {
   def main(args: Array[String]) {
     val spark = SparkSession.builder().appName("DataFrameApp").master("local[2]").getOrCreate()
-    val peopleDF = spark.read.format("json").load("D:\\Workspace\\IDEA\\BigDataStudy\\spark-demo\\input\\people.json")
+    val path = "D:\\Workspace\\IDEA\\BigDataStudy\\spark-demo\\input\\people.json"
+    val peopleDF = spark.read.format("json").load(path)
 
     // 输入DataFrame对应的Scheme信息
     peopleDF.printSchema()

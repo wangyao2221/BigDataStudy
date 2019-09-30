@@ -210,4 +210,8 @@
     <orderEntry type="library" name="sbt: org.tukaani:xz:1.0:jar" level="project" />
     <orderEntry type="library" name="sbt: stax:stax-api:1.0.1:jar" level="project" />
   </component>
+  <component name="sonarModuleSettings">
+    <option name="localAnalysisScripName" value="&lt;PROJECT&gt;" />
+    <option name="serverName" value="&lt;PROJECT&gt;" />
+  </component>
 </module>
