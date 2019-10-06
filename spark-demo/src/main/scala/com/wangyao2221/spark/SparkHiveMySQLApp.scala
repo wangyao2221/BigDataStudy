@@ -9,6 +9,7 @@ class SparkHiveMySQLApp {
       .master("local[2]")
       .getOrCreate();
 
+
     val hiveDF = spark.table("emp")
 
     val mysqlDF = spark.read.format("jdbc") .option("url", "jdbc:mysql://localhost:3306/spark").option("dbtable", "spark.DEPT").option("user", "root").option("password", "cloudera").option("driver", "com.mysql.jdbc.Driver").load
