@@ -13,7 +13,9 @@ object SparkStatCleanJob {
     val accessRDD = spark.sparkContext.textFile("input/access.log")
     accessRDD.take(10).foreach(println)
 
-//    spark.createDataFrame()
+    val accessDF = spark.createDataFrame(accessRDD.map(x => AccessConvertUtil.parseLog(x)), AccessConvertUtil.struct)
+    accessDF.printSchema()
+    accessDF.show(false)
 
     spark.stop()
   }
