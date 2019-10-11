@@ -23,16 +23,18 @@ object AccessConvertUtil {
       val time = splits(0)
       val ip = splits(1)
       val url = splits(2)
-      val traffic = splits(3)
+      val traffic = splits(3).toLong
 
       val doamin = "http://www.imooc.com/"
-      val cmsTypeId = url.substring(url.indexOf(doamin) + doamin.length).split("\t")
       var cmsType = ""
       var cmsId = 0l
 
-      if (cmsTypeId.length == 2) {
-        cmsType = cmsTypeId(0)
-        cmsId = cmsTypeId(1).toLong
+      if(!"-".equals(url)) {
+        val cmsTypeId = url.substring(url.indexOf(doamin) + doamin.length).split("\t")
+        if (cmsTypeId.length == 2) {
+          cmsType = cmsTypeId(0)
+          cmsId = cmsTypeId(1).toLong
+        }
       }
 
       val city = ""
