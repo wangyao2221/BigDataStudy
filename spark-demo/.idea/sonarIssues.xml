@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/sbtShell">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../hadoop-demo/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/.gitignore">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build.sbt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/DataFrameApp.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/ParquetApp.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/SchemaMergeApp.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/SchemaMergeTest.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/SparkHiveDataApp.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/SparkHiveMySQLAPp.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/SparkHiveMySQLApp.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/SparkHiveMySQLSQL">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/SparkHiveMysqlApp.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/SparkMySQLDataApp.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/SparkMySQLStatement">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/log/AccessConvertUtil.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/log/DateUtils.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/log/SparkStatCleanJob.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/log/SparkStatFormatJob.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../LeetCode/src/ContainerWithMostWater/Solution.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../LeetCode/src/ContainerWithMostWater/Solution2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../LeetCode/src/Test360/Test2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/work/hadoop-devops/aoc/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/work/hadoop-gateway/src/main/java/com/iqiyi/hadoop/api/hive/controller/HiveClusterController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/work/hadoop-gateway/src/main/java/com/iqiyi/hadoop/api/hive/service/HiveService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/work/hadoop-gateway/src/main/java/com/iqiyi/hadoop/component/HiveManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

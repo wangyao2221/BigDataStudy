@@ -15,5 +15,6 @@ lazy val root = (project in file("."))
     name := "SparkStudy",
     libraryDependencies += "org.apache.spark" % "spark-core_2.11" % "2.2.0",
     libraryDependencies += "org.apache.spark" % "spark-core_2.11" % "2.2.0",
-    libraryDependencies += "org.apache.spark" % "spark-hive_2.11" % "2.2.0"
+    libraryDependencies += "org.apache.spark" % "spark-hive_2.11" % "2.2.0",
+    libraryDependencies += "com.ggstar" % "ip" % "ipdatabase" % "1.0-SNAPSHOT"
   )

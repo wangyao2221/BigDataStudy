@@ -1,0 +1,2 @@
+安装jar包到本地maven仓库
+mvn install:install-file -Dfile=D:\Workspace\IDEA\ipdatabase\target\ipdatabase-1.0-SNAPSHOT.jar -DgroupId="com.ggstar" -DartifactId=ipdatabase -Dversion="1.0-SNAPSHOT" -Dpackaging=jar 
