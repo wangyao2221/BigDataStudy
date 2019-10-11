@@ -1,6 +1,6 @@
 package com.wangyao2221.spark.log
 
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{SaveMode, SparkSession}
 
 object SparkStatCleanJob {
   def main(args: Array[String]) = {
@@ -14,8 +14,9 @@ object SparkStatCleanJob {
     accessRDD.take(10).foreach(println)
 
     val accessDF = spark.createDataFrame(accessRDD.map(x => AccessConvertUtil.parseLog(x)), AccessConvertUtil.struct)
-    accessDF.printSchema()
-    accessDF.show(false)
+//    accessDF.printSchema()
+//    accessDF.show(false)
+    accessDF.write.format("parquet").mode(SaveMode.Overwrite).partitionBy("day").save("input/clean")
 
     spark.stop()
   }

@@ -43,7 +43,7 @@ object AccessConvertUtil {
 
       Row(url, cmsType, cmsId, traffic, ip, city, time, day)
     } catch {
-      case e:Exception => Row(0)
+      case e:Exception => Row("","",0L,0L,"","","","")
     }
   }
 }

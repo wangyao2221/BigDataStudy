@@ -6,7 +6,7 @@ object SparkStatFormatJob {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession.builder()
       .appName("SparkStatFormatJob")
-      .master("local[2]")
+      .master("local[*]")
       .getOrCreate()
 
     val access = spark.sparkContext.textFile("input/access.20161111.log")
