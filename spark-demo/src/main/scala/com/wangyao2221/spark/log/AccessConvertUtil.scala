@@ -1,5 +1,6 @@
 package com.wangyao2221.spark.log
 
+import com.ggstar.util.ip.IpHelper
 import org.apache.spark.sql.Row
 import org.apache.spark.sql.types.{LongType, StringType, StructField, StructType}
 
@@ -37,7 +38,7 @@ object AccessConvertUtil {
         }
       }
 
-      val city = ""
+      val city = IpHelper.findRegionByIp(ip)
       val day = time.substring(0, 10).replace("-", "")
 
       Row(url, cmsType, cmsId, traffic, ip, city, time, day)

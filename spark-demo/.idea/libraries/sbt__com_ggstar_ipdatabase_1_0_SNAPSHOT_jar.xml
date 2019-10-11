@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sbt: com.ggstar:ipdatabase:1.0-SNAPSHOT:jar">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ggstar/ipdatabase/1.0-SNAPSHOT/ipdatabase-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

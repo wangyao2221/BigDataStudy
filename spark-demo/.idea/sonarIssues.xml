@@ -113,6 +113,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/test/scala/com/wangyao2221/spark/IpdatabaseTest.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../LeetCode/src/ContainerWithMostWater/Solution.java">
           <value>
             <set />
