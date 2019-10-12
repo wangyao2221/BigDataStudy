@@ -31,7 +31,7 @@ object AccessConvertUtil {
       var cmsId = 0l
 
       if(!"-".equals(url)) {
-        val cmsTypeId = url.substring(url.indexOf(doamin) + doamin.length).split("\t")
+        val cmsTypeId = url.substring(url.indexOf(doamin) + doamin.length).split("/")
         if (cmsTypeId.length == 2) {
           cmsType = cmsTypeId(0)
           cmsId = cmsTypeId(1).toLong

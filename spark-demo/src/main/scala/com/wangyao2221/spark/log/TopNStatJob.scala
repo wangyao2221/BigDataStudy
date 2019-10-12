@@ -28,8 +28,15 @@ object TopNStatJob {
     val videoTopNDF = accessDF.filter($"day" === "20161110" && $"cmsType" === "video")
       .groupBy("day", "cmsId").agg(count("cmsId").as("times"))
       .orderBy($"times".desc)
-
     videoTopNDF.show(false)
+
+//    accessDF.createOrReplaceTempView("access_logs")
+//    val videoTopNDF = spark.sql("select day,cmsId,count(1) as times " +
+//      "from access_logs " +
+//      "where day='20161110' and cmsType='video' " +
+//      "group by day,cmsId " +
+//      "order by times desc")
+//    videoTopNDF.show(false)
   }
 
 }
