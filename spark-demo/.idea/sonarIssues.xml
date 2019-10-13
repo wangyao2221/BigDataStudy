@@ -13,6 +13,11 @@
             <set />
           </value>
         </entry>
+        <entry key="/a.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="/sbtShell">
           <value>
             <set />
@@ -114,6 +119,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/log/TopNStatJob.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/log/schema.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/log/util/JDBCUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/log/util/JDBCUtil.scala">
           <value>
             <set />
           </value>
