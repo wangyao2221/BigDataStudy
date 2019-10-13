@@ -123,6 +123,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/log/dao/StatDao.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/log/model/DayVedioAccessStat.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/log/schema.sql">
           <value>
             <set />

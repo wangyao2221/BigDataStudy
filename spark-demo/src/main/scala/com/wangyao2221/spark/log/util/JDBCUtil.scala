@@ -3,7 +3,7 @@ package com.wangyao2221.spark.log.util
 import java.sql.{Connection, DriverManager, Statement}
 
 object JDBCUtil {
-  def getConnetction(): Unit = {
+  def getConnetction(): Connection = {
     Class.forName("com.mysql.cj.jdbc.Driver")
     DriverManager.getConnection("jdbc:mysql://localhost:3306/spark_imooc_log_db?serverTimezone=UTC", "root", "123456")
   }
