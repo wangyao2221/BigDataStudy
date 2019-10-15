@@ -148,6 +148,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/log/model/DayVedioTrafficsStat.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/log/model/DayVideoAccessStat.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/log/model/DayVideoTrafficsStat.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/scala/com/wangyao2221/spark/log/schema.sql">
           <value>
             <set />

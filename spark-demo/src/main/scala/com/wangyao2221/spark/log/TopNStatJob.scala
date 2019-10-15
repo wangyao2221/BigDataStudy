@@ -1,7 +1,7 @@
 package com.wangyao2221.spark.log
 
 import com.wangyao2221.spark.log.dao.StatDao
-import com.wangyao2221.spark.log.model.{DayCityAccessStat, DayVedioAccessStat}
+import com.wangyao2221.spark.log.model.{DayCityAccessStat, DayVideoAccessStat}
 import org.apache.spark.sql.expressions.Window
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.sql.functions._
@@ -50,13 +50,13 @@ object TopNStatJob {
 
     try {
       videoAccessTopNDF.foreachPartition(partitionOfRecords => {
-        val list = new ListBuffer[DayVedioAccessStat]
+        val list = new ListBuffer[DayVideoAccessStat]
 
         partitionOfRecords.foreach(info => {
           val day = info.getAs[String]("day")
           val cmdId = info.getAs[Long]("cmsId")
           val times = info.getAs[Long]("times")
-          list.append(DayVedioAccessStat(day, cmdId, times))
+          list.append(DayVideoAccessStat(day, cmdId, times))
         })
 
         StatDao.insertDayVedioAccessTopN(list)
@@ -115,13 +115,13 @@ object TopNStatJob {
 
     try {
       videoTrafficTopNDF.foreachPartition(partitionOfRecords => {
-        val list = new ListBuffer[DayVedioAccessStat]
+        val list = new ListBuffer[DayVideoAccessStat]
 
         partitionOfRecords.foreach(info => {
           val day = info.getAs[String]("day")
           val cmdId = info.getAs[Long]("cmsId")
           val traffics = info.getAs[Long]("traffics")
-          list.append(DayVedioAccessStat(day, cmdId, traffics))
+          list.append(DayVideoAccessStat(day, cmdId, traffics))
         })
 
         StatDao.insertDayVedioAccessTopN(list)
