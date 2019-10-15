@@ -25,7 +25,9 @@ object TopNStatJob {
 
 //    videoAccessTopNStat(spark, accessDF)
 
-    cityAccessTopNStat(spark, accessDF)
+//    cityAccessTopNStat(spark, accessDF)
+
+    videoTrafficsTopNStat(spark, accessDF)
 
     spark.stop()
   }
@@ -100,6 +102,16 @@ object TopNStatJob {
     } catch {
       case e: Exception => e.printStackTrace()
     }
+  }
+
+  def videoTrafficsTopNStat(spark: SparkSession, accessDf: DataFrame) = {
+    import spark.implicits._
+    val videoTrafficTopNDF = accessDf.filter($"day" === "20161110" && $"cmsType" === "video")
+      .groupBy("day","cmsId")
+      .agg(count("traffic").as("traffics"))
+
+    videoTrafficTopNDF.printSchema()
+    videoTrafficTopNDF.show(false)
   }
 
 }
