@@ -110,8 +110,25 @@ object TopNStatJob {
       .groupBy("day","cmsId")
       .agg(count("traffic").as("traffics"))
 
-    videoTrafficTopNDF.printSchema()
-    videoTrafficTopNDF.show(false)
+//    videoTrafficTopNDF.printSchema()
+//    videoTrafficTopNDF.show(false)
+
+    try {
+      videoTrafficTopNDF.foreachPartition(partitionOfRecords => {
+        val list = new ListBuffer[DayVedioAccessStat]
+
+        partitionOfRecords.foreach(info => {
+          val day = info.getAs[String]("day")
+          val cmdId = info.getAs[Long]("cmsId")
+          val traffics = info.getAs[Long]("traffics")
+          list.append(DayVedioAccessStat(day, cmdId, traffics))
+        })
+
+        StatDao.insertDayVedioAccessTopN(list)
+      })
+    } catch {
+      case e: Exception => e.printStackTrace()
+    }
   }
 
 }
