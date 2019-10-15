@@ -23,9 +23,9 @@ object TopNStatJob {
     accessDF.printSchema()
     accessDF.show(false)
 
-//    videoAccessTopNStat(spark, accessDF)
+    videoAccessTopNStat(spark, accessDF)
 
-//    cityAccessTopNStat(spark, accessDF)
+    cityAccessTopNStat(spark, accessDF)
 
     videoTrafficsTopNStat(spark, accessDF)
 
