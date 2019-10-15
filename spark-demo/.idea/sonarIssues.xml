@@ -18,7 +18,17 @@
             <set />
           </value>
         </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="/sbtShell">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/dfc62d9f-eb97-41f6-af27-9a1c3c1b7872/console.sql">
           <value>
             <set />
           </value>
@@ -174,6 +184,21 @@
           </value>
         </entry>
         <entry key="D:/work/hadoop-devops/aoc/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/work/hadoop-devops/hadoop-gateway/src/main/java/com/iqiyi/hadoop/api/impala/dao/impl/ImpalaUserDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/work/hadoop-devops/hadoop-gateway/src/main/java/com/iqiyi/hadoop/api/yarn/controller/YarnQueueController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/work/hadoop-devops/hadoop-gateway/src/main/resources/impala-database.properties">
           <value>
             <set />
           </value>

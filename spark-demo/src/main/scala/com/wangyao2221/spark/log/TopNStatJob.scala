@@ -68,6 +68,7 @@ object TopNStatJob {
     import spark.implicits._
     val cityAccessTopNDF = accessDF.filter($"day" === "20161110" && $"cmsType" === "video")
       .groupBy("day", "cmsId", "city").agg(count("cmsId").as("times"))
+    val json = ""
 //      .orderBy($"time".desc)
 //    cityAccessTopNDF.show(false)
 
