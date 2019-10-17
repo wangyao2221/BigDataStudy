@@ -38,6 +38,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/ImoocLogGatewayApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/controller/TopNController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/.gitignore">
           <value>
             <set />
