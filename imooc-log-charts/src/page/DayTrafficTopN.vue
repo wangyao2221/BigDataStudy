@@ -1,12 +1,12 @@
 <template>
-  <div id="page-content">
-    imooc log platform
-  </div>
+    <div id="page-content">
+      Day Traffic Top N
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'IMoocLog'
+  name: 'DayTrafficTopN'
 }
 </script>
 

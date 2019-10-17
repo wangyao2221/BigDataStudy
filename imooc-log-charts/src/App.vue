@@ -1,24 +1,27 @@
 <template>
   <div id="app">
-      <el-menu mode="vertical"
-               default-active="2"
-               class="el-menu-vertical-demo"
-               @open="handleOpen"
-               @close="handleClose">
-        <el-submenu index="1">
-          <template slot="title">统计图表</template>
-          <el-menu-item index="1-1">按访问量统计</el-menu-item>
-          <el-menu-item index="1-2">按城市统计</el-menu-item>
-          <el-menu-item index="1-3">按流量统计</el-menu-item>
-        </el-submenu>
-      </el-menu>
-    <router-view/>
+    <el-container>
+      <el-aside width="200px">
+        <aside-menu></aside-menu>
+      </el-aside>
+      <el-container>
+        <el-header><Menu></Menu></el-header>
+        <el-main><router-view/></el-main>
+      </el-container>
+    </el-container>
   </div>
 </template>
 
 <script>
+import Menu from './components/Menu'
+import AsideMenu from './components/AsideMenu'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Menu,
+    AsideMenu
+  }
 }
 </script>
 
@@ -29,6 +32,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /*margin-top: 60px;*/
 }
 </style>
