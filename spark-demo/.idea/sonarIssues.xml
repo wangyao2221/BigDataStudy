@@ -13,6 +13,11 @@
             <set />
           </value>
         </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="/a.sql">
           <value>
             <set />
@@ -48,7 +53,132 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/entity/DayCityAccessStat.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/entity/DayVideoAccessStat.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/entity/DayVideoTrafficsStat.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/entity/Response.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/mapper/DayCityAccessStatMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/mapper/DayVideoAccessStatMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/mapper/DayVideoTrafficsStatMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/service/DayCityAccessStatMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/service/DayCityAccessStatService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/service/DayVideoAccessStatMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/service/DayVideoAccessStatService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/service/DayVideoTrafficsStatMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/service/DayVideoTrafficsStatService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/service/IDayCityAccessStatService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/service/IDayVideoAccessStatService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/service/IDayVideoTrafficsStatService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/service/impl/DayCityAccessStatService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/service/impl/DayVideoAccessStatService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/java/com/wangyao2221/imooc/log/service/impl/DayVideoTrafficsStatService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/resources/mapping/DayCityAccessStatMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/resources/mapping/DayCityAccessStatMapping">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/resources/mapping/DayVideoAccessStatMapping.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/resources/mapping/DayVideoTrafficStatMapping.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/target/classes/mapping/DayVideoAccessStatMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/target/classes/mapping/DayVideoTrafficStatMapper.xml">
           <value>
             <set />
           </value>
@@ -209,6 +339,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../LeetCode/src/Test360/Test2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../MybatisTest/src/main/java/com/wangyao2221/mybatistest/dao/CommentMapper.java">
           <value>
             <set />
           </value>

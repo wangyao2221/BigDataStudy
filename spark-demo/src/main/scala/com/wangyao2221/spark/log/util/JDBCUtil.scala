@@ -5,7 +5,7 @@ import java.sql.{Connection, DriverManager, Statement}
 object JDBCUtil {
   def getConnetction(): Connection = {
     Class.forName("com.mysql.cj.jdbc.Driver")
-    DriverManager.getConnection("jdbc:mysql://localhost:3306/spark_imooc_log_db?serverTimezone=UTC", "root", "123456")
+    DriverManager.getConnection("jdbc:mysql://localhost:3306/spark_imooc_log_db?serverTimezone=UTC&characterEncoding=UTF-8", "root", "123456")
   }
 
   def release(statement: Statement, connection: Connection) = {

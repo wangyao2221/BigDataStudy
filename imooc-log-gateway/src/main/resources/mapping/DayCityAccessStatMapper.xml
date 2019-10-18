@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangyao2221.imooc.log.mapper.DayCityAccessStatMapper">
+    <resultMap id="DayCityAccessStatResultMap" type="com.wangyao2221.imooc.log.entity.DayCityAccessStat">
+        <result column="day" jdbcType="VARCHAR" property="day"></result>
+        <result column="cms_id" jdbcType="INTEGER" property="cmsId"></result>
+        <result column="city" jdbcType="VARCHAR" property="city"></result>
+        <result column="times" jdbcType="INTEGER" property="times"></result>
+        <result column="times_rank" jdbcType="INTEGER" property="timesRank"></result>
+    </resultMap>
+
+    <select id="findAll" resultType="com.wangyao2221.imooc.log.entity.DayCityAccessStat">
+        select * from day_video_city_access_topn_stat;
+    </select>
+</mapper>

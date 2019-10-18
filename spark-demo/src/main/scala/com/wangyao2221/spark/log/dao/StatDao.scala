@@ -69,7 +69,7 @@ object StatDao {
     try {
       connection = JDBCUtil.getConnetction()
 
-      val sql = "insert into day_video_traffic_topn_stat values(?, ?, ?)"
+      val sql = "insert into day_video_traffics_topn_stat values(?, ?, ?)"
       statement = connection.prepareStatement(sql)
 
       for (elem <- list) {

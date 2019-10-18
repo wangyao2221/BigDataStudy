@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangyao2221.imooc.log.mapper.DayVideoAccessStatMapper">
+    <resultMap id="DayVideoAccessStatResultMap" type="com.wangyao2221.imooc.log.entity.DayVideoAccessStat">
+        <result column="day" javaType="VARCHAR" property="day"></result>
+        <result column="cms_id" javaType="INTEGER" property="cmsId"></result>
+        <result column="times" javaType="INTEGER" property="times"></result>
+    </resultMap>
+
+    <select id="findAll" resultType="com.wangyao2221.imooc.log.entity.DayVideoAccessStat">
+        select * from day_video_access_topn_stat;
+    </select>
+</mapper>

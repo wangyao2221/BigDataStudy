@@ -1,35 +1,74 @@
 package com.wangyao2221.imooc.log.controller;
 
+import com.wangyao2221.imooc.log.entity.DayCityAccessStat;
+import com.wangyao2221.imooc.log.entity.DayVideoAccessStat;
+import com.wangyao2221.imooc.log.entity.DayVideoTrafficsStat;
+import com.wangyao2221.imooc.log.entity.Response;
+import com.wangyao2221.imooc.log.service.impl.DayCityAccessStatService;
+import com.wangyao2221.imooc.log.service.impl.DayVideoAccessStatService;
+import com.wangyao2221.imooc.log.service.impl.DayVideoTrafficsStatService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.concurrent.*;
+import java.util.List;
 
 @RestController
 @RequestMapping("/log/topN")
 public class TopNController {
-    @GetMapping("futureTest")
+    @Autowired
+    DayCityAccessStatService dayCityAccessStatService;
+
+    @Autowired
+    DayVideoAccessStatService dayVideoAccessStatService;
+
+    @Autowired
+    DayVideoTrafficsStatService dayVideoTrafficsStatService;
+
+    @GetMapping("/dayCityAccessStats")
     @ResponseBody
-    public Callable<String> futureTest() {
-        System.out.println("进入futureTest方法");
-        Callable<String> callable = new Callable<String>() {
-            @Override
-            public String call() throws Exception {
-                System.out.println("进入call方法");
-                Thread.sleep(10000);
-                System.out.println("耗时操作结束");
-                return "耗时操作结束";
-            }
-        };
-        System.out.println("从futureTest方法返回");
-        return callable;
+    public Response<List<DayCityAccessStat>> dayCityAccessStats() {
+        Response<List<DayCityAccessStat>> response = Response.Error();
+
+        try {
+            List<DayCityAccessStat> result = dayCityAccessStatService.findAll();
+            response = Response.Result(Response.DEFAULT, result);
+        } catch (Exception e) {
+            response = Response.Error(e.getMessage());
+        }
+
+        return response;
     }
 
-    @GetMapping
+    @GetMapping("/dayVideoAccessStats")
     @ResponseBody
-    public String test() {
-        return "test";
+    public Response<List<DayVideoAccessStat>> dayVideoAccessStats() {
+        Response<List<DayVideoAccessStat>> response = Response.Error();
+
+        try {
+            List<DayVideoAccessStat> result = dayVideoAccessStatService.findAll();
+            response = Response.Result(Response.DEFAULT, result);
+        } catch (Exception e) {
+            response = Response.Error(e.getMessage());
+        }
+
+        return response;
+    }
+
+    @GetMapping("/dayVideoTrafficsStats")
+    @ResponseBody
+    public Response<List<DayVideoTrafficsStat>> dayVideoTrafficsStats() {
+        Response<List<DayVideoTrafficsStat>> response = Response.Error();
+
+        try {
+            List<DayVideoTrafficsStat> result = dayVideoTrafficsStatService.findAll();
+            response = Response.Result(Response.DEFAULT, result);
+        } catch (Exception e) {
+            response = Response.Error(e.getMessage());
+        }
+
+        return response;
     }
 }
