@@ -11,7 +11,7 @@ export default {
   name: 'DayAccessTopN',
   data () {
     return {
-      dayVideoAccessStats: [],
+      dayAccessTopNData: [],
       options: {
         title: {
           text: 'Video每日访问统计',
@@ -19,9 +19,9 @@ export default {
         },
         series: [
           {
-            name: '姓名',
+            name: '访问量',
             type: 'pie',
-            data: this.dayVideoAccessStats,
+            data: [],
             radius: '55%',
             center: ['40%', '50%']
           }
@@ -36,10 +36,20 @@ export default {
     drawChart () {
       let url = '/api/imooc/log/topN/dayVideoAccessStats'
       Axios.get(url).then(response => {
-        this.dayVideoAccessStats = response.data.result
+        let result = response.data.result
+        for (let i in result) {
+          if (i < 100) {
+            let item = result[i]
+            this.dayAccessTopNData.push({value: item.time, name: item.cmsId})
+          } else {
+            break
+          }
+        }
+        let myChart = this.echarts.init(document.getElementById('myCharts'))
+        this.options.series[0].data = this.dayAccessTopNData
+        myChart.setOption(this.options)
+        console.log(this.options)
       })
-      let myChart = this.echarts.init(document.getElementById('myCharts'))
-
       // let options = {
       //   title: {
       //     text: '未来一周气温变化',
@@ -75,7 +85,6 @@ export default {
       //     }
       //   ]
       // }
-      myChart.setOption(this.options)
     }
   }
 }
