@@ -11,6 +11,7 @@ export default {
   name: 'DayCityAccessTopN',
   data () {
     return {
+      myChart: null,
       dayCityAccessTopNDataRank: [[], [], []],
       labels: [],
       loading: true,
@@ -94,6 +95,11 @@ export default {
       }
     }
   },
+  watch: {
+    n (newVal, oldVar) {
+      this.drawChart(newVal)
+    }
+  },
   created () {
     let query = this.$route.query
     if (query['n']) {
@@ -101,14 +107,15 @@ export default {
     }
   },
   mounted () {
-    this.drawChart()
+    this.myChart = this.echarts.init(document.getElementById('myChart'))
+    this.myChart.setOption(this.options)
+    this.drawChart(this.n)
   },
   methods: {
-    drawChart () {
-      let url = '/api/imooc/log/topN/dayVideoCityAccessStatTopN?n=' + this.n
-
-      let myChart = this.echarts.init(document.getElementById('myChart'))
-      myChart.setOption(this.options)
+    drawChart (n) {
+      let url = '/api/imooc/log/topN/dayVideoCityAccessStatTopN?n=' + n
+      this.dayCityAccessTopNDataRank = [[], [], []]
+      this.labels = []
 
       Axios.get(url).then(response => {
         let result = response.data.result
@@ -136,7 +143,7 @@ export default {
           }
         }
 
-        myChart.setOption({
+        this.myChart.setOption({
           yAxis: {
             data: this.labels
           },
