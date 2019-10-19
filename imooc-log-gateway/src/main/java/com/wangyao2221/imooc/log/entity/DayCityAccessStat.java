@@ -2,17 +2,17 @@ package com.wangyao2221.imooc.log.entity;
 
 public class DayCityAccessStat {
     private String day;
-    private Long cmdId;
+    private Long cmsId;
     private String city;
     private String times;
-    private Integer timeRank;
+    private Integer timesRank;
 
-    public DayCityAccessStat(String day, Long cmdId, String city, String times, Integer timeRank) {
+    public DayCityAccessStat(String day, Long cmsId, String city, String times, Integer timesRank) {
         this.day = day;
-        this.cmdId = cmdId;
+        this.cmsId = cmsId;
         this.city = city;
         this.times = times;
-        this.timeRank = timeRank;
+        this.timesRank = timesRank;
     }
 
     public String getDay() {
@@ -23,12 +23,12 @@ public class DayCityAccessStat {
         this.day = day;
     }
 
-    public Long getCmdId() {
-        return cmdId;
+    public Long getCmsId() {
+        return cmsId;
     }
 
-    public void setCmdId(Long cmdId) {
-        this.cmdId = cmdId;
+    public void setCmsId(Long cmsId) {
+        this.cmsId = cmsId;
     }
 
     public String getCity() {
@@ -47,11 +47,11 @@ public class DayCityAccessStat {
         this.times = times;
     }
 
-    public Integer getTimeRank() {
-        return timeRank;
+    public Integer getTimesRank() {
+        return timesRank;
     }
 
-    public void setTimeRank(Integer timeRank) {
-        this.timeRank = timeRank;
+    public void setTimesRank(Integer timesRank) {
+        this.timesRank = timesRank;
     }
 }

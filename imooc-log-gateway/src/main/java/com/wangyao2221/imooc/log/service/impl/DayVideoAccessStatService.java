@@ -17,4 +17,9 @@ public class DayVideoAccessStatService implements IDayVideoAccessStatService {
     public List<DayVideoAccessStat> findAll() {
         return dayVideoAccessStatMapper.findAll();
     }
+
+    @Override
+    public List<DayVideoAccessStat> findTimesTopN(int n) {
+        return dayVideoAccessStatMapper.findTimesTopN(n);
+    }
 }

@@ -4,14 +4,11 @@ import com.wangyao2221.imooc.log.entity.DayCityAccessStat;
 import com.wangyao2221.imooc.log.entity.DayVideoAccessStat;
 import com.wangyao2221.imooc.log.entity.DayVideoTrafficsStat;
 import com.wangyao2221.imooc.log.entity.Response;
-import com.wangyao2221.imooc.log.service.impl.DayCityAccessStatService;
-import com.wangyao2221.imooc.log.service.impl.DayVideoAccessStatService;
-import com.wangyao2221.imooc.log.service.impl.DayVideoTrafficsStatService;
+import com.wangyao2221.imooc.log.service.IDayCityAccessStatService;
+import com.wangyao2221.imooc.log.service.IDayVideoAccessStatService;
+import com.wangyao2221.imooc.log.service.IDayVideoTrafficsStatService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -19,13 +16,13 @@ import java.util.List;
 @RequestMapping("/log/topN")
 public class TopNController {
     @Autowired
-    DayCityAccessStatService dayCityAccessStatService;
+    IDayCityAccessStatService dayCityAccessStatService;
 
     @Autowired
-    DayVideoAccessStatService dayVideoAccessStatService;
+    IDayVideoAccessStatService dayVideoAccessStatService;
 
     @Autowired
-    DayVideoTrafficsStatService dayVideoTrafficsStatService;
+    IDayVideoTrafficsStatService dayVideoTrafficsStatService;
 
     @GetMapping("/dayCityAccessStats")
     @ResponseBody
@@ -64,6 +61,34 @@ public class TopNController {
 
         try {
             List<DayVideoTrafficsStat> result = dayVideoTrafficsStatService.findAll();
+            response = Response.Result(Response.DEFAULT, result);
+        } catch (Exception e) {
+            response = Response.Error(e.getMessage());
+        }
+
+        return response;
+    }
+
+    @RequestMapping("/dayVideoAccessStatTopN")
+    public Response<List<DayVideoAccessStat>> dayVideoAccessStatTopN(@RequestParam(value = "n",defaultValue = "100") Integer n) {
+        Response<List<DayVideoAccessStat>> response = Response.Error();
+
+        try {
+            List<DayVideoAccessStat> result = dayVideoAccessStatService.findTimesTopN(n);
+            response = Response.Result(Response.DEFAULT, result);
+        } catch (Exception e) {
+            response = Response.Error(e.getMessage());
+        }
+
+        return response;
+    }
+
+    @RequestMapping("/dayVideoCityAccessStatTopN")
+    public Response<List<DayCityAccessStat>> dayCityVideoAccessStatTopN(@RequestParam(value = "n", defaultValue = "5") Integer n) {
+        Response<List<DayCityAccessStat>> response = Response.Error();
+
+        try {
+            List<DayCityAccessStat> result = dayCityAccessStatService.findCityAccessTopN(n);
             response = Response.Result(Response.DEFAULT, result);
         } catch (Exception e) {
             response = Response.Error(e.getMessage());

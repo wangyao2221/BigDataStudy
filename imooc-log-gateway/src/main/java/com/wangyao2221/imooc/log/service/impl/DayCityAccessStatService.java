@@ -18,4 +18,9 @@ public class DayCityAccessStatService implements IDayCityAccessStatService {
     public List<DayCityAccessStat> findAll() {
         return dayCityAccessStatMapper.findAll();
     }
+
+    @Override
+    public List<DayCityAccessStat> findCityAccessTopN(int n) {
+        return dayCityAccessStatMapper.findCityAccessTopN(n);
+    }
 }

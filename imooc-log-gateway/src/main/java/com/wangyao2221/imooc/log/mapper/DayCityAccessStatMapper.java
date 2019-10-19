@@ -8,4 +8,5 @@ import java.util.List;
 @Repository
 public interface DayCityAccessStatMapper {
     List<DayCityAccessStat> findAll();
+    List<DayCityAccessStat> findCityAccessTopN(int n);
 }

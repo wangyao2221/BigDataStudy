@@ -9,4 +9,5 @@ import java.util.List;
 @Repository
 public interface DayVideoAccessStatMapper {
     List<DayVideoAccessStat> findAll();
+    List<DayVideoAccessStat> findTimesTopN(int n);
 }

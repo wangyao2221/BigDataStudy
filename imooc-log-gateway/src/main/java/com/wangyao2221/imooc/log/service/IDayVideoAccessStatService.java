@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface IDayVideoAccessStatService {
     List<DayVideoAccessStat> findAll();
+    List<DayVideoAccessStat> findTimesTopN(int n);
 }
