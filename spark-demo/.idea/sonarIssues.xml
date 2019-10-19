@@ -33,12 +33,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/316c2765-11c2-4b31-aceb-8c18969bb14c/console_1.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/dfc62d9f-eb97-41f6-af27-9a1c3c1b7872/console.sql">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../hadoop-demo/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-charts/src/page/DayAccessTopN.vue">
           <value>
             <set />
           </value>
@@ -153,6 +163,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/resources/day_video_city_access_topn.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/resources/mapping/DayCityAccessStatMapper.xml">
           <value>
             <set />
@@ -169,6 +184,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../imooc-log-gateway/src/main/resources/mapping/DayVideoTrafficStatMapping.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/target/classes/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../imooc-log-gateway/target/classes/mapping/DayCityAccessStatMapper.xml">
           <value>
             <set />
           </value>
