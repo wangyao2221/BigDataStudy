@@ -1,6 +1,6 @@
 <template>
     <div id="page-content">
-      <div id="myCharts" style="height: 500px"></div>
+      <div id="myChart" style="height: 500px" v-loading="loading"></div>
     </div>
 </template>
 
@@ -12,21 +12,59 @@ export default {
   data () {
     return {
       dayAccessTopNData: [],
+      dayAccessTopNDataLabel: [],
+      loading: true,
+      n: 100,
       options: {
         title: {
           text: 'Video每日访问统计',
           x: 'center'
         },
+        tooltip: {},
+        xAxis: {
+          data: []
+        },
+        yAxis: {},
+        dataZoom: [
+          {
+            type: 'slider',
+            xAxisIndex: 0,
+            start: 0,
+            end: 100
+          },
+          {
+            type: 'inside',
+            xAxisIndex: 0,
+            start: 10,
+            end: 100
+          },
+          {
+            type: 'slider',
+            yAxisIndex: 0,
+            start: 0,
+            end: 100
+          },
+          {
+            type: 'inside',
+            yAxisIndex: 0,
+            start: 0,
+            end: 100
+          }
+        ],
         series: [
           {
             name: '访问量',
-            type: 'pie',
-            data: [],
-            radius: '55%',
-            center: ['40%', '50%']
+            type: 'bar',
+            data: []
           }
         ]
       }
+    }
+  },
+  created () {
+    let query = this.$route.query
+    if (query['n']) {
+      this.n = query['n']
     }
   },
   mounted () {
@@ -34,57 +72,33 @@ export default {
   },
   methods: {
     drawChart () {
-      let url = '/api/imooc/log/topN/dayVideoAccessStats'
+      let url = '/api/imooc/log/topN/dayVideoAccessStatTopN?n=' + this.n
+
+      let myChart = this.echarts.init(document.getElementById('myChart'))
+      myChart.setOption(this.options)
+
+      this.loading = true
       Axios.get(url).then(response => {
         let result = response.data.result
+
         for (let i in result) {
-          if (i < 100) {
-            let item = result[i]
-            this.dayAccessTopNData.push({value: item.time, name: item.cmsId})
-          } else {
-            break
-          }
+          let item = result[i]
+          this.dayAccessTopNData.push(item.time)
+          this.dayAccessTopNDataLabel.push('视频' + item.cmsId)
         }
-        let myChart = this.echarts.init(document.getElementById('myCharts'))
-        this.options.series[0].data = this.dayAccessTopNData
-        myChart.setOption(this.options)
-        console.log(this.options)
+
+        myChart.setOption({
+          xAxis: {
+            data: this.options.xAxis.data = this.dayAccessTopNDataLabel
+          },
+          series: [{
+            name: '访问量',
+            data: this.dayAccessTopNData
+          }]
+        })
+
+        this.loading = false
       })
-      // let options = {
-      //   title: {
-      //     text: '未来一周气温变化',
-      //     subtext: '纯属虚构'
-      //   },
-      //   tooltip: {
-      //     trigger: 'axis'
-      //   },
-      //   legend: {
-      //     data: ['最高气温', '最低气温']
-      //   },
-      //   xAxis: [{
-      //     type: 'category',
-      //     boundaryGap: false,
-      //     data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
-      //   }],
-      //   yAxis: [{
-      //     type: 'value',
-      //     axisLabel: {
-      //       formatter: '{value} °C'
-      //     }
-      //   }],
-      //   series: [
-      //     {
-      //       name: '最高气温',
-      //       type: 'line', // pie->饼状图  line->折线图  bar->柱状图
-      //       data: [11, 11, 15, 13, 12, 13, 10]
-      //     },
-      //     {
-      //       name: '最低气温',
-      //       type: 'line', // pie->饼状图  line->折线图  bar->柱状图
-      //       data: [1, -2, 2, 5, 3, 2, 0]
-      //     }
-      //   ]
-      // }
     }
   }
 }
