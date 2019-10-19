@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <el-container>
-      <el-aside width="200px">
-        <aside-menu></aside-menu>
-      </el-aside>
+<!--      <el-aside width="200px">-->
+<!--        <aside-menu></aside-menu>-->
+<!--      </el-aside>-->
       <el-container>
         <el-header><Menu></Menu></el-header>
         <el-main><router-view/></el-main>
@@ -33,5 +33,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   /*margin-top: 60px;*/
+}
+
+.el-main {
+  text-align: center;
 }
 </style>

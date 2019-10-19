@@ -115,7 +115,7 @@ export default {
         let dataMap = {}
 
         for (let i in result) {
-          let item = result[i]
+          let item = result[result.length - i - 1]
 
           if (!dataMap.hasOwnProperty(item['city'])) {
             dataMap[item['city']] = []
