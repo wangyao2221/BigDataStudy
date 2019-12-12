@@ -11,6 +11,7 @@ export default {
   name: 'DayAccessTopN',
   data () {
     return {
+      myChart: null,
       dayAccessTopNData: [],
       dayAccessTopNDataLabel: [],
       loading: true,
@@ -61,6 +62,11 @@ export default {
       }
     }
   },
+  watch: {
+    n (newVal, oldVar) {
+      this.drawChart(newVal)
+    }
+  },
   created () {
     let query = this.$route.query
     if (query['n']) {
@@ -68,14 +74,15 @@ export default {
     }
   },
   mounted () {
-    this.drawChart()
+    this.myChart = this.echarts.init(document.getElementById('myChart'))
+    this.myChart.setOption(this.options)
+    this.drawChart(this.n)
   },
   methods: {
-    drawChart () {
-      let url = '/api/imooc/log/topN/dayVideoAccessStatTopN?n=' + this.n
-
-      let myChart = this.echarts.init(document.getElementById('myChart'))
-      myChart.setOption(this.options)
+    drawChart (n) {
+      let url = '/api/imooc/log/topN/dayVideoAccessStatTopN?n=' + n
+      this.dayAccessTopNData = []
+      this.dayAccessTopNDataLabel = []
 
       this.loading = true
       Axios.get(url).then(response => {
@@ -87,9 +94,9 @@ export default {
           this.dayAccessTopNDataLabel.push('视频' + item.cmsId)
         }
 
-        myChart.setOption({
+        this.myChart.setOption({
           xAxis: {
-            data: this.options.xAxis.data = this.dayAccessTopNDataLabel
+            data: this.dayAccessTopNDataLabel
           },
           series: [{
             name: '访问量',

@@ -4,6 +4,7 @@ import LogStatCharts from '../page/LogStatCharts'
 import DayAccessTopN from '../page/DayAccessTopN'
 import DayCityAccessTopN from '../page/DayCityAccessTopN'
 import DayTrafficTopN from '../page/DayTrafficTopN'
+import SearchComponentTest from '../page/SearchComponentTest'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/DayTrafficTopN',
       name: 'DayTrafficTopN',
       component: DayTrafficTopN
+    },
+    {
+      path: '/SearchComponentTest',
+      name: 'SearchComponentTest',
+      component: SearchComponentTest
     }
   ]
 })

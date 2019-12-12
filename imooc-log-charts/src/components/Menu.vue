@@ -17,6 +17,10 @@
         <i class="el-icon-data-line"></i>
         <span>按流量统计</span>
       </el-menu-item>
+      <el-menu-item index="/SearchComponentTest">
+        <i class="el-icon-data-line"></i>
+        <span>可配置化组件测试</span>
+      </el-menu-item>
     </el-submenu>
   </el-menu>
 </template>
